@@ -1,0 +1,121 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+ 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>my_auctions</title> 
+    <link rel="stylesheet" href="../static/css/style.css"> 
+ 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> 
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" /> 
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600;1,800&display=swap" rel="stylesheet"> 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+
+body{ 
+    background-image: url("../static/Images/homebg.png"); 
+    background-repeat: no-repeat; 
+    background-size: 100% 750px; 
+} 
+ 
+* { 
+  box-sizing: border-box; 
+} 
+ 
+.buttons{ 
+    margin-top: 16.1%; 
+    margin-left: 17%; 
+}
+
+p{
+    font-size: 17px;
+}
+
+.card {
+    background-color: rgb(224, 199, 222);
+    border: 3px solid black;
+    padding: -45px;
+    border-radius: 24px;
+    width: 400px;
+    box-sizing: border-box;
+    margin: 6px ;
+    position: left;
+    right: 0;
+    position: absolute;
+    font-family: "Georgia", Times, serif;
+}
+    </style>
+</head> 
+ 
+<nav class="navbar navbar-default ">
+    <div class="container-fluid pull-right">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/user/signout/" class="btn btn--secondary"; style="color: brown;">FairTrade</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="/user/signout/" class="btn btn--secondary"; style="color: brown;"><i class="fa fa-sign-out"; style="margin-right: 7px;"></i>Sign Out</a></li>
+      </ul>
+    </div>
+  </nav>
+
+<!-- <div class="item">
+    <div class = "center">
+    <a href="/user/signout/" class="btn btn--secondary">
+        <button>Sign Out</button> 
+    </a>
+      
+    
+    </div>
+</div> -->
+
+<!-- <div class="card">
+    <h2 class="center">YOUR INFO</h2>
+    <p>
+        <strong>ID:</strong> {{ session['user']['_id'] }}<br>
+        <strong>NAME:</strong> {{ session['user']['name'] }}<br>
+        <strong>E-MAIL:</strong> {{ session['user']['email'] }}<br>
+        <strong>USERNAME</strong> {{ session['user']['username'] }}<br>
+        
+    </p>
+</div> -->
+
+<body> 
+<div class="buttons"> 
+    <div>  
+        <a href="../templates/myauctions.html">
+            <button 
+            style="color: rgb(250, 245, 247); border-radius: 5% ; background-color: rgb(129, 23, 49); height: 50px; width: 200px; font-size: large;"> 
+    <a href="/myauctions/" class="btn btn--secondary" style="color: rgb(250, 245, 247)">My Auctions</a>
+    
+        </button> 
+        </a>
+       
+    </div> 
+ 
+        <div style="padding-top: 30px;">  
+            <a href="../templates/BuyProducts.html">
+                <button 
+                style="color: rgb(250, 245, 247); border-radius: 5% ; background-color: rgb(129, 23, 49); height: 50px; width: 200px; font-size: large;"> 
+                <a href="/buyproducts/" class="btn btn--secondary" style="color: rgb(250, 245, 247)">Buy Products </a>
+                </button> 
+            </a>
+        </div> 
+</div> 
+    
+
+
+
+
+</body> 
+ 
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600;1,800&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+    <style>
+       body {
+      font-family: Arial, Helvetica, sans-serif;
+      background-image: url("../static/Images/3.png");
+      background-repeat: no-repeat;
+      background-size: 100% 750px;
+    }
+* {box-sizing: border-box;}
+
+input[type=text],
+    select,
+    textarea {
+      width: 100%;
+      padding: 12px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      margin-top: 6px;
+      margin-bottom: 16px;
+      resize: vertical;
+    }
+
+    input[type=submit] {
+      background-color: #e5e8e9;
+      color: rgb(129, 23, 49);
+      font-weight:bold;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    input[type=submit]:hover {
+      background-color: #b7b9b9;
+    }
+
+    .container {
+      border-radius: 5px;
+      background-color: rgb(129, 23, 49);
+      padding: 20px;
+      margin-left: 50px;
+      width: 600px;
+      color: rgb(219, 217, 217);
+    }
+
+    .item {
+      float: right;
+      padding-right: 10px;
+      border: none;
+      vertical-align: middle;
+      height: 48px;
+      line-height: 48px;
+    }
+
+    button {
+      color: rgb(129, 23, 49);
+      font-size: 15px;
+      border-radius: 15px;
+    }
+
+    li {
+      font-size: 17px;
+    }
+</style>
+</head>
+<body>
+
+  <nav class="navbar navbar-default ">
+    <div class="container-fluid pull-right">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="/user/signout/" class="btn btn--secondary"; style="color: brown;">FairTrade</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="/back/" class="btn btn--secondary">Home</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="/user/signout/" class="btn btn--secondary"; style="color: brown;"><i class="fa fa-sign-out"; style="margin-right: 7px;"></i>Sign Out</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="item">
+    <!-- <a href="../templates/First.html">
+      <button>  
+        <i class="fa fa-angle-double-left" style="color: darkblue;"></i>
+        <a href="/back/" class="btn btn--secondary"> BACK</a> 
+      </button>
+    </a> -->
+</div>
+<div class="item" style="margin-left: 80%;">
+  <a href="../templates/sell_history.html">
+    <button class="button button-small button-assertive">
+      <a href="/sellhistory/" class="btn btn--secondary"> SELL HISTORY</a> 
+    </button>
+  </a>
+</div>
+
+
+    <div class="container" style="margin-top: 50px;">
+        <form action="" name="my_auctions" style="padding: 20px;">
+          <h2>Add Your Product Here !</h2><br>
+
+          <!-- <label for="fname">Product Name</label> -->
+          <input type="text" id="fname" name="productname" placeholder="Enter Product name..">
+      
+          <!-- <label for="lname">Description</label> -->
+          <input type="text" id="lname" name="description" placeholder="Enter Description..">
+          <h5 style="margin-top: -2%;">Upto max 200 words*</h5>
+
+          <!-- <label for="fname">End Date</label> -->
+          <input type="text" id="fname" name="end_date" placeholder="Enter End Date..">
+      
+          <!-- <label for="lname">Starting Price</label> -->
+          <input type="text" id="lname" name="starting_price" placeholder="Enter Starting Price..">
+
+          <!-- <label for="lname">Uplode Product Image</label> -->
+          <br><input type="file" id="img" name="img" accept="image/*">
+
+          <p class="error error--hidden"></p>
+      
+          <br><br><button type="submit" >
+            <a href ="/user/my_auction/">Submit</a>
+            <!-- Submit -->
+          </button>
+        </form>
+      </div>
+      <script src="../static/JS/script.js"></script>
+</body>
+</html>

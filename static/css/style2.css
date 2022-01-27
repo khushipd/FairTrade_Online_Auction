@@ -1,0 +1,41 @@
+table, th, td {
+    border: 1px solid white;
+    border-collapse: collapse;
+  }
+
+  th{
+    background-color: rgb(10, 138, 138);
+    padding: 10px;
+    font-size: 20px;
+     }
+
+  td{
+      background-color:rgb(170, 237, 241);
+      padding: 0%;
+      margin: 0%;
+      font-size: 20px;
+
+  }
+
+  table{
+      height: 300px;
+      width: 100%;
+      text-align: center;
+      margin-top: 50%;
+  }
+
+ .item {
+    float:left;
+    padding-left: 50%;
+    padding: 0px 0px 0px 16px ;
+    border: none;
+    vertical-align: middle;
+    height: 48px;
+    line-height: 48px;
+}
+
+button{
+  font-size: 15px;
+  border-radius: 15px;
+} 
+

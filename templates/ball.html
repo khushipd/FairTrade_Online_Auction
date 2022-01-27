@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+    <link rel="stylesheet" href="../static/css/style3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+
+    <div id="ball">
+        <a name="ball_">
+            <div class="item">
+                <a href="../templates/BuyProducts.html"><button>
+                    <i class="fa fa-angle-double-left" style="color: brown;"></i>
+                    <a href="/back_4/" class="btn btn--secondary"> BACK </a>                        
+                    </button></a>
+            </div>
+            <div class="item" style="margin-left: 80%;">
+                <button class="button button-small button-assertive">
+                    <a href="/bid_history/" class="btn btn--secondary"> 
+                    BID HISTORY</a>
+                </button>
+            </div>
+            <div class="product" style="background-color: rgb(129, 23, 49); margin-top: 50px; color: white;">
+
+                <img class="image" src="../static/Images/ball.jpeg" height="200px" width="200px">
+                <div style="padding: 30px;">
+                    <table>
+                        <tr>
+                            <td>Product Name</td>
+                            <td>Ball</td>
+                        </tr>
+                        <tr>
+                            <td>Description</td>
+                            <td>Pikipo Stuffed Soft Ball with Rattle Sound</td>
+                        </tr>
+                        <tr>
+                            <td>Starting Price</td>
+                            <td>150</td>
+                        </tr>
+                        <tr>
+                            <td>Bid Amount</td>
+                            <td><input type="text" placeholder="Enter amount..."></td>
+                        </tr>
+                    </table>
+                    <div class="_button" onclick="message()">
+                        <button type="submit" id="check">
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </a>
+
+    
+</body>
+
+</html>
+
+<script>
+    $(document).ready(function(){
+      $("#check").click(function(){
+        alert("Submitted Successfully!");
+      });
+    });
+</script>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Auction</title>
+    <link rel="stylesheet" href="../static/css/style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      
+      body{
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .container{
+        display: flex;
+        flex-direction: column;
+      }
+
+      .flex-container {
+        display: flex;
+        background-color:rgb(129, 23, 49);
+        justify-content: center;
+        border-radius: 15px;
+        width: 70%;
+        margin: auto;
+        margin-top: 15px;
+      }
+      
+      .flex-container > div {
+        background-color: #e9e6e6;
+        margin: 10px;
+        padding: 10px;
+        font-size: 30px;
+      }
+      
+      .desc{
+        width:800px;
+      }
+      .desc p{
+        font-size: 20px;
+        margin-bottom: 5px;
+      }
+      h6{
+        margin: 0%;
+        padding: 0%;
+        font-weight: lighter;
+        color: rgb(54, 53, 53);
+        font-size: 18px;
+      }
+      h5{
+        margin: 0%;
+        padding: 0%;
+        font-weight: normal;
+        font-size: 20px;
+      }
+      li{
+        font-size: 17px;
+      }
+      
+      </style>
+  </head>
+  <body style="background-color:#e9e6e6;">
+
+  
+
+    <div class="item">
+      <a href="../templates/BuyProducts.html">
+        <button>  
+          <i class="fa fa-angle-double-left" style="color: darkblue;"></i>
+          <a href="/back_4/" class="btn btn--secondary"> BACK </a>
+        </button>
+      </a>
+    </div>
+  
+  
+      
+<h1 style="text-align: center; font-weight: normal;">Bid History</h1>
+
+<div class="container">
+
+  <div class="flex-container">
+    <div class="image">
+      <a href="#"><img src="../static/Images/laptop.jpg" height="140px"></a>
+    </div>
+    <div class="desc">
+      <h5 style="margin-bottom: 5px;margin-top:0px;">Laptop</h5>
+      <h6>Microsoft Surface Laptop 3 – 13.5" Touch-Screen – Intel Core i5 - 8GB Memory <br> 128GB Solid State Drive (Latest Model) Platinum with Alcantara</h6>
+      <h5>Total : 56,000/-</h5>
+      <h5>Bid Amount : 60,000/-</h5>
+      <h6>End Date : 26/10/2021</h6>
+      <i class="fa fa-trash-o"></i>
+    </div>  
+  </div>
+
+  <div class="flex-container">
+    <div class="image">
+      <a href="#"><img src="../static/Images/headphones.jpg" height="140px"></a>
+    </div>
+    <div class="desc">
+      <h5 style="margin-bottom: 5px;margin-top:0px;">Headphones</h5>
+      <h6>Sony Black Noice Cancelling Headphones</h6>
+      <h5>Total : 1200/-</h5>
+      <h5>Bid Amount : 3000/-</h5>
+      <h6>End Date : 26/10/2021</h6>
+      <i class="fa fa-trash-o"></i>
+    </div>  
+  </div>
+
+  <div class="flex-container">
+    <div class="image">
+      <a href="#"><img src="../static/Images/bench.png" height="140px"></a>
+    </div>
+    <div class="desc">
+      <h5 style="margin-bottom: 5px;margin-top:0px;">Laptop</h5>
+      <h6>mazon Brand - Solimo Mira Multi-Purpose Laptop Table with Cup Holder (Blue)</h6>
+      <h5>Total : 789/-</h5>
+      <h5>Bid Amount : 800/-</h5>
+      <h6>End Date : 26/10/2021</h6>
+      <i class="fa fa-trash-o"></i>
+    </div>  
+  </div>
+
+  <div class="flex-container">
+    <div class="image">
+      <a href="#"><img src="../static/Images/oven.png" height="140px"></a>
+    </div>
+    <div class="desc">
+      <h5 style="margin-bottom: 5px;margin-top:0px;">Oven</h5>
+      <h6>Philips HD6975/00 25 Litre Digital Oven Toaster Grill, Grey, 25 liter
+      </h6>
+      <h5>Total : 6,699/-</h5>
+      <h5>Bid Amount : 7,000/-</h5>
+      <h6>End Date : 26/10/2021</h6>
+      <i class="fa fa-trash-o"></i>
+    </div>  
+  </div>
+</div>
+
+
+
+
+
+</body>
+</html>
+<!-- <body>
+   
+
+  <div class="item">
+      <a href="../templates/BuyProducts.html">
+        <button>  
+          <i class="fa fa-angle-double-left" style="color: darkblue;"></i>
+          <a href="/back_4/" class="btn btn--secondary"> BACK </a>
+        </button>
+      </a>
+  </div>
+
+
+    <div class="Table" >
+        <table class="buy_products">
+        <tr>
+          <th>Sr. No.</th>
+          <th>Image</th>
+          <th>Product Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>End date</th>
+          <th>Bid Amount</th>
+          <th>Delete Bid</th>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td><a href="#"><img src="../static/Images/laptop.jpg" height="200px"></a></td>
+            <td><a href="../templates/laptop.html">Laptop</a></td>
+            <td>Microsoft Surface Laptop 3 – 13.5"<br> Touch-Screen – Intel Core i5 - 8GB Memory <br> 128GB Solid State Drive (Latest Model) <br>Platinum with Alcantara</td>
+            <td>80,000</td>
+            <td>21/10/2021</td>
+            <td>85000</td>
+            <td><i class="fa fa-trash-o"></i></td>
+        </tr>
+
+        <tr>
+            <td>1</td>
+            <td><a href="#"><img src="../static/Images/headphones.jpg" height="200px"></a> </td>
+            <td><a href="#">Headphones</a></td>
+            <td>Sony Black Noice Cancelling Headphones</td>
+            <td>1200</td>
+            <td>27/10/2021</td>
+            <td>1350</td>
+            <td><i class="fa fa-trash-o"></i></td>
+          </tr>
+
+      </table>
+    </div>
+    
+</body>
+</html> -->
